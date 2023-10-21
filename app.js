@@ -40,41 +40,93 @@ var option1 = document.getElementById("option1")
 var option2 = document.getElementById("option2")
 var option3 = document.getElementById("option3")
 var option4 = document.getElementById("option4")
-    var enablebtn = document.getElementById("btn")
+var enablebtn = document.getElementById("btn")
 var roptions = document.getElementsByName("roptions")
+var paras = document.getElementById("paras")
+var correct = document.getElementById("correct")
+var time = document.getElementById("time-div");
 
 
-// work
+
+// before value
+
 var index = 0
+var number = 0
+
+// time work
 
 
-
+// main work
 // next que
 function nextQue() {
+
     var roptions = document.getElementsByName("roptions")
-  for (var i = 0 ; i<roptions.length; i++){
-roptions[i].checked = false
-    enablebtn.disabled = true
+    // calling func second work
+  for (var i = 0 ; i<roptions.length ; i++){
+
+ // calling func third work
+    if (roptions[i].checked){
+      var optionsValue = roptions[i].value
+      // getting obj value using input value
+      var userInputValue =quizQue[index -1][`opt${optionsValue}`]
+
+      //  getting obj correct value
+var correctOption = quizQue[index -1].correctOpt
+
+
+// function second last work or (line by line backend work)
+// if obj correct value is === to uservalue
+  if (userInputValue == correctOption){
+    number++
 
 
   }
+    }
+
+
+     // calling func second work
+roptions[i].checked = false  //radio off work (auto)
+    enablebtn.disabled = true // next on work
+
+
+
+  }
+
+  // sabsa last mai chalega
+
     if (index > quizQue.length - 1 ){
+      // end and number div
         console.log("End")
+  
+        var result = "your result is "+ (number / quizQue.length) *100 + "%"  
+        console.log(result)
+
+      
     }
     else{
+      //  first work of func func call hota hi yeh chalega
+      // jab tak q khatam nahi honga chalta rahega
+
+      
       questions.innerHTML = quizQue[index].question
 option1.innerText =  quizQue[index].opt1
 option2.innerText =  quizQue[index].opt2
 option3.innerText =  quizQue[index].opt3
 option4.innerText =  quizQue[index].opt4
-index++  
+index++
+
     }
 
 }
+
 // file khulta hi func chal gaya or pehla opt dekhadya phr dusra tab chala jab next btn pa
+// auto 
+
 nextQue() 
 
-// enable button 
+// enable button  (next ka button enable hojayega)
+// user work phr upper sa kamm shroo oga
+
 function enableBtn(){
 
     enablebtn.disabled = false

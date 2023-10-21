@@ -5,36 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
     <link rel="stylesheet" href="index.css">
+    <script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css
+" rel="stylesheet">
 </head>
 
 
     <body>
         <div class="work">
             <div class="main">
+                <div id="time-div"></div>
+                <!-- <span id="correct" disabled ></span>  -->
        <p id="questions"></p>
 
        <div >
         <label >
-            <input type="radio" name="roptions"  onclick="enableBtn()"> 
-            <!-- span mai contenr islya dya taka radio button mai kharabi na hoo  -->
+            <input type="radio" name="roptions"  onclick="enableBtn()" value="1"> 
+            <!-- span mai content islya dya taka radio button mai kharabi na hoo  -->
             <span id="option1" ></span>
           </label>
     </div>
     <div >
         <label >
-            <input type="radio" name="roptions" onclick="enableBtn()"> 
+            <input type="radio" name="roptions" onclick="enableBtn()" value="2"> 
             <span id="option2"></span>
           </label>
     </div>
     <div >
         <label >
-            <input type="radio" name="roptions" onclick="enableBtn()" >
+            <input type="radio" name="roptions" onclick="enableBtn()"  value="3">
             <span id="option3"></span> 
           </label>
     </div>
     <div >
         <label >
-            <input type="radio" name="roptions" onclick="enableBtn()"> 
+            <input type="radio" name="roptions" onclick="enableBtn()" value="4"> 
             <span id="option4"></span>
           </label>
     </div>
@@ -42,10 +50,14 @@
 
  <div class="button"><button onclick="nextQue()"  id="btn" disabled >Next</button></div>
 
+<!-- <div class="">
+    <p id="paras"></p>
 
+</div> -->
             </div>
         </div>
         <script src="app.js"></script>
+        
     </body>
 
 </html>
