@@ -45,8 +45,10 @@ var roptions = document.getElementsByName("roptions")
 var paras = document.getElementById("paras")
 var correct = document.getElementById("correct")
 var time = document.getElementById("time-div");
-
-
+var result = document.getElementById("result")
+var inner_div = document.querySelector(".inner-div");
+var topresult = document.getElementById("topresult")
+var b = quizQue.length
 
 // before value
 
@@ -78,7 +80,7 @@ var correctOption = quizQue[index -1].correctOpt
 // if obj correct value is === to uservalue
   if (userInputValue == correctOption){
     number++
-
+    topresult.innerHTML = `${number} / ${b}`
 
   }
     }
@@ -95,19 +97,22 @@ roptions[i].checked = false  //radio off work (auto)
   // sabsa last mai chalega
 
     if (index > quizQue.length - 1 ){
+// none.style.visibility = none
       // end and number div
-        console.log("End")
-  
-        var result = "your result is "+ (number / quizQue.length) *100 + "%"  
-        console.log(result)
-
-      
+        // console.log("End")
+        var resultt = "your result is "+ (number / quizQue.length) *100 + "%"  
+        // console.log(result)
+//         enableBtn.disabled
+// result.innerHTML = `
+// your resulr is this ${resultt}`
+ 
+inner_div.innerHTML =`${resultt}`
     }
     else{
       //  first work of func func call hota hi yeh chalega
       // jab tak q khatam nahi honga chalta rahega
 
-      
+      topresult.innerHTML = `${number} / ${b}`
       questions.innerHTML = quizQue[index].question
 option1.innerText =  quizQue[index].opt1
 option2.innerText =  quizQue[index].opt2

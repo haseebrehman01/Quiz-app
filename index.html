@@ -15,21 +15,51 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css
 
 
     <body>
-        <div class="work">
-            <div class="main">
-                <div id="time-div"></div>
+        <div class="main-div">
+            <div class="inner-div">
+                <div class="time-result flex">
+                <div id="topresult"></div>
+                <div id="time-div">01:60</div>
+               </div>
                 <!-- <span id="correct" disabled ></span>  -->
-       <p id="questions"></p>
+         <div class="q-o">
+       <h2 id="questions"></h2>
 
-       <div >
+ <ul>
+            <li>
+                <input type="radio" name="roptions"  onclick="enableBtn()" value="1" id="op1" class="answer">  
+                <label for="op1" id="option1"></label>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <input type="radio" name="roptions"  onclick="enableBtn()" value="2" id="op2" class="answer">  
+                <label for="op2" id="option2"></label>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <input type="radio" name="roptions"  onclick="enableBtn()" value="3" id="op3" class="answer">  
+                <label for="op3" id="option3"></label>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <input type="radio" name="roptions"  onclick="enableBtn()" value="4" id="op4" class="answer">  
+                <label for="op4" id="option4"></label>
+            </li>
+        </ul>
+
+       <!-- <div >
+        
         <label >
             <input type="radio" name="roptions"  onclick="enableBtn()" value="1"> 
-            <!-- span mai content islya dya taka radio button mai kharabi na hoo  -->
+             span mai content islya dya taka radio button mai kharabi na hoo  
             <span id="option1" ></span>
           </label>
     </div>
     <div >
-        <label >
+        <label>
             <input type="radio" name="roptions" onclick="enableBtn()" value="2"> 
             <span id="option2"></span>
           </label>
@@ -45,19 +75,16 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css
             <input type="radio" name="roptions" onclick="enableBtn()" value="4"> 
             <span id="option4"></span>
           </label>
-    </div>
+    </div> -->
+</div> 
+ <div class="button">
+    <button onclick="nextQue()"  id="btn" disabled >Next</button>
+</div>
+</div>
 
-
- <div class="button"><button onclick="nextQue()"  id="btn" disabled >Next</button></div>
-
-<!-- <div class="">
-    <p id="paras"></p>
-
-</div> -->
             </div>
-        </div>
+    
         <script src="app.js"></script>
         
     </body>
 
-</html>

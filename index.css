@@ -1,34 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: 'Josefin Sans';
 }
-body {
+html{
+    /* font-size: 62.5%; */
+}
+.main-div{
     display: flex;
+    width: 100vw;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Center within the viewport height */
-    margin: 0;
-    background-color: rgb(231, 99, 99);
+    border: 2px solid red;
+    background: linear-gradient(to top left, #3ed8ff,#a8ffff);
 }
 
-.work {
-    background-color: aqua;
-    width: 470px;
-    height: 420px;
-    /* display: flex;
-    flex */
-}
 
-.main {
-    /* Add styles for your content inside the .main div */
-    background-color: beige;
-   
+.inner-div{
+    width: 40vw;
+    border: 1px solid  #3ed8ff;
+    background-color: #fff;
+    padding: 20px 80px;
+    border-radius: 10px;
+    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
 }
-
-.button{
+.time-result{
     display: flex;
-    justify-content:  start!important;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+#topresult {
+    border: 1px solid  #3ed8ff;
+    padding: 10px 20px;
+    /* margin: 0 auto; */
+}
+#time-div{
+    border: 1px solid  #3ed8ff;
+    padding: 10px 20px;  
+}
+#questions{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 30px 0px 20px 0px    ;
+}
+.inner-div li {
+    margin-bottom: 18px;
+    list-style: none;
+        font-size: 1.1rem;
+        color: rgb(69, 69, 69);
+}
+input{
+    cursor: pointer;
+}
+.button {
+    /* border: 1px solid red; */
+    margin: 30px 0 20px 0;
+    padding: 11px;
+    background-color: #7de5ff;
+    /* font-weight: bold; */
+    /* color: black; */
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+ 
+}
 
-
+#btn {
+    /* color: black !important; */
+    background-color: transparent !important;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    width: 100%;
+    font-weight: 600;
+    /* font-weight: bold;   */
 }
