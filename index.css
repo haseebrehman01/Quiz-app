@@ -30,31 +30,38 @@ html{
 .time-result{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 #topresult {
-    border: 1px solid  #3ed8ff;
+    border: 2px solid  #00ccff;
     padding: 10px 20px;
     /* margin: 0 auto; */
 }
 #time-div{
-    border: 1px solid  #3ed8ff;
+    border: 2px solid  #2bd5ff;
     padding: 10px 20px;  
 }
 #questions{
     font-size: 1.8rem;
     font-weight: 400;
-    margin: 30px 0px 20px 0px    ;
+    margin: 18px 0px 15px 0px    ;
+    color: #236171;
+    /* text-align: center; */
 }
 .inner-div li {
     margin-bottom: 18px;
     list-style: none;
         font-size: 1.1rem;
         color: rgb(69, 69, 69);
+  
+        width: 100%;
+   
 }
 input{
     cursor: pointer;
+
 }
+
 .button {
     /* border: 1px solid red; */
     margin: 30px 0 20px 0;
@@ -62,7 +69,7 @@ input{
     background-color: #7de5ff;
     /* font-weight: bold; */
     /* color: black; */
-    border-radius: 20px;
+    border-radius:20px;
     text-align: center;
     width: 100%;
  
@@ -78,4 +85,57 @@ input{
     width: 100%;
     font-weight: 600;
     /* font-weight: bold;   */
+}
+.quiz{
+    text-align: center;
+    margin-block: 20px;
+}
+.span{
+    color:#5ddfff;
+}
+.line{
+    background-color: gray;
+    border: 1px solid rgb(162, 162, 162);
+    display: inline-block;
+    width: 100%;
+    /* height: 1px !important; */
+}
+
+
+/*  */
+.last-work{
+    /* border: 1px solid red; */
+    text-align: center;
+    /* margin-top: 20px; */
+    /* margin-block: 50px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+}
+.last-h2, 
+.last-h3 ,
+.last-h4{
+margin-top: 15px;
+
+}
+.last-btns{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+.last-btn{
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    background-color: #00beee;
+    font-size: 16px;
+}
+.a{
+    background-color: green !important;
+    color: white !important;
+    font-size: 18px !important;
+}
+.s{
+    display: flex;
+    flex-direction: column;
 }
