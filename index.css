@@ -3,39 +3,96 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans';
+    font-family: 'Josefin Sans',sans-serif;
 }
+
 html{
-    /* font-size: 62.5%; */
+    /* font-size: 95.5%; */
+}
+body{
+    /* max-width: 600px; */
+    /* margin: 0 auto; */
+    /* max-width: 500px; */
+    
 }
 .main-div{
-    display: flex;
-    width: 100vw;
+    /* display: flex; */
+    width: 100%;
     min-height: 100vh;
+    /* justify-content: center;
+    align-items: center; */
+
+    background: linear-gradient(to top left, #3ed8ff,#a8ffff);
+    z-index: 2 !important;
+}
+.min-width{
+width:80% ;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+height: 100%
+;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.header{
+display: flex;
+justify-content: center;
+
+height: 70px;
+align-items: center;
+background-color: #ffffff;
+max-width: 100%;
+
+}
+.img-css{
+    width: 55px;
+    height : 55px;
+
+    
+}
+.header-link{
+    text-decoration: none;
+    font-size: 20px;
+    color: #00ccff;
+}
+.main-2{
+    display: flex;
+
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
-    background: linear-gradient(to top left, #3ed8ff,#a8ffff);
 }
-
-
 .inner-div{
-    width: 40vw;
-    border: 1px solid  #3ed8ff;
-    background-color: #fff;
-    padding: 20px 80px;
-    border-radius: 10px;
-    box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+ 
+        width: 55vw;
+        font-family: 'Josefin Sans';
+        background-color: #fff;
+        padding: 20px 80px;
+        border-radius: 10px;
+        box-shadow: 0 1rem 1rem -0.7rem rgba(0, 0, 0, 0.4);
+        margin-top: 20px;
+        border: 1px solid red;
+        z-index: 2; /* Higher z-index value for the quiz div */
+    
 }
+
+
 .time-result{
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
 #topresult {
     border: 2px solid  #00ccff;
     padding: 10px 20px;
     /* margin: 0 auto; */
+    font-size: 18px;
+    font-weight: bold;
 }
 #time-div{
     border: 2px solid  #2bd5ff;
@@ -44,12 +101,12 @@ html{
 #questions{
     font-size: 1.8rem;
     font-weight: 400;
-    margin: 18px 0px 15px 0px    ;
+    margin: 30px 0px 15px 0px    ;
     color: #236171;
     /* text-align: center; */
 }
 .inner-div li {
-    margin-bottom: 18px;
+    margin-bottom: 25px;
     list-style: none;
         font-size: 1.1rem;
         color: rgb(69, 69, 69);
@@ -88,7 +145,8 @@ input{
 }
 .quiz{
     text-align: center;
-    margin-block: 20px;
+    /* margin-block: 10px; */
+    margin-bottom:15px ;
 }
 .span{
     color:#5ddfff;
@@ -111,6 +169,8 @@ input{
     display: flex;
     flex-direction: column;
     justify-content: space-between !important;
+    align-items: center !important;
+
 }
 .last-h2, 
 .last-h3 ,
@@ -138,4 +198,30 @@ margin-top: 15px;
 .s{
     display: flex;
     flex-direction: column;
+}
+.pass{
+    color: green !important;
+}
+.failed{
+    color:  red;
+}
+
+
+.c1{
+    position: absolute;
+    top:80px ; 
+    
+    left: 40px
+}
+.c2{
+    position: absolute;
+    bottom:20px ;  
+
+    right: 40px
+}
+.round{
+    height: 200px;
+    width: 200px;
+    border-radius:100px ;
+    background:linear-gradient(to top right, #bcbcbc33 ,#ffffff) ;
 }

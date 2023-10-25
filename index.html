@@ -2,94 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="
-https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js
-"></script>
-<link href="
-https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css
-" rel="stylesheet">
+    <title>Signin-page</title>
+    <link rel="stylesheet" href="quiz.css">
+
+    <script>
+                function openQuizPage() {
+            var emailValue = document.getElementById("email").value;
+            var passwordValue = document.getElementById("password").value;
+            
+            // Check if both email and password match the placeholders
+            if (emailValue === "haseeb@gmail.com" && passwordValue === "12345") {
+                window.location.href = "home.html";
+            } else {
+                alert("Please enter the placeholder email and password.");
+            }
+        }
+    </script>
+        <script src="
+        https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js
+        "></script>
+        <link href="
+        https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css
+        " rel="stylesheet">
 </head>
+<body>
+    <div class="outer-box">
+        <div class="inner-box">
+            <header class="signup-header">
+                <h1>Sign<span>in</span></h1>
+            </header>
 
-
-    <body>
-        <div class="main-div">
-            <div class="inner-div">  
-                 <div class="quiz"><h1>Quiz <span class="span">App</span></h1></div>
-                <div class="time-result flex">
-                 
-                <div id="topresult"></div>
-                <div id="time-div"></div>
-       
-               </div>
-                     <span class="line"></span>  
-                       <!-- <span id="correct" disabled ></span>  -->
-         <div class="q-o">
-       <h2 id="questions"></h2>
-
- <ul>
-            <li>
-                <input type="radio" name="roptions"  onclick="enableBtn()" value="1" id="op1" class="answer">  
-                <label for="op1" id="option1"></label>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <input type="radio" name="roptions"  onclick="enableBtn()" value="2" id="op2" class="answer">  
-                <label for="op2" id="option2"></label>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <input type="radio" name="roptions"  onclick="enableBtn()" value="3" id="op3" class="answer">  
-                <label for="op3" id="option3"></label>
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <input type="radio" name="roptions"  onclick="enableBtn()" value="4" id="op4" class="answer">  
-                <label for="op4" id="option4"></label>
-            </li>
-        </ul>
-
-       <!-- <div >
-        
-        <label >
-            <input type="radio" name="roptions"  onclick="enableBtn()" value="1"> 
-             span mai content islya dya taka radio button mai kharabi na hoo  
-            <span id="option1" ></span>
-          </label>
+            <main class="signup-body">
+                <form action="#">
+                    <p>
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="haseeb@gmail.com" required>
+                    </p>
+                    <p>
+                        <label for="password">Your Password</label>
+                        <input type="password" id="password" placeholder="12345" required>
+                    </p>
+                    <p >
+                        <input type="button" id="submit" value="Login" onclick="openQuizPage()" class="signup-body">
+                        <p class="center">Email: haseeb@gmail.com</p>
+                        <p class="center">Password: 12345</p>
+                    </p>
+                </form>
+            </main>
+        </div>
     </div>
-    <div >
-        <label>
-            <input type="radio" name="roptions" onclick="enableBtn()" value="2"> 
-            <span id="option2"></span>
-          </label>
-    </div>
-    <div >
-        <label >
-            <input type="radio" name="roptions" onclick="enableBtn()"  value="3">
-            <span id="option3"></span> 
-          </label>
-    </div>
-    <div >
-        <label >
-            <input type="radio" name="roptions" onclick="enableBtn()" value="4"> 
-            <span id="option4"></span>
-          </label>
-    </div> -->
-</div> 
- <div class="button">
-    <button onclick="nextQue()"  id="btn" disabled >Next</button>
-</div>
-</div>
+    <div class="round c1"></div>
+    <div class="round c2"></div>
+</body> 
+   
 
-            </div>
-    
-        <script src="app.js"></script>
-        <script src="https://kit.fontawesome.com/d368ad9ef6.js" crossorigin="anonymous"></script>
-
-    </body>
-
+<script src="app.js"></script>
+</body>
+</html>

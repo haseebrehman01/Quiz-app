@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+
+body{
+    /* background: linear-gradient(to top left, #3ed8ff,#a8ffff) !important; */
+    /* border: 1px solid red; */
+    background: linear-gradient(to top left, #3ed8ff,#a8ffff);
+}
+.main{
+    /* background: linear-gradient(to top left, #3ed8ff,#a8ffff) !important; */
+height: 100vh;
+width: 100vw;
+z-index: -2 !important;
+}
+.min-width{
+    width:80% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: 100%
+    ;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        
+        height: 70px;
+        align-items: center;
+        background-color: #ffffff;
+        max-width: 100%;
+        
+        }
+        .img-css{
+            width: 55px;
+            height : 55px;
+        
+            
+        }
+        .header-link{
+            text-decoration: none;
+            font-size: 20px;
+            color: #00ccff;
+        }
+        .span{
+            color:#5ddfff;
+        }
+        .html-quiz{
+
+            display: flex;
+            flex-direction: column;
+            max-width: 700px;
+            /* justify-content: center; */
+            margin: 0 auto;
+        /* padding: 10%; */
+            background-color: white;
+            height: 320px;
+            text-align: center;
+            border-radius: 20px;
+            margin-block: 100px;
+            background-color: #f6fdff ;
+        }
+        .html-h2{
+/* display: flex;
+align-items: center; */
+/* padding: 10px; */
+font-size: 40px;
+margin-block: 20px;
+
+        }
+        .para{
+
+margin-block:10px ;
+font-size: large;
+padding-inline: 60px;
+font-size: 20px;
+/* font-weight: 30px !important; */
+        }
+        .start-btn{
+
+padding: 10px;
+width: 500px;
+border-radius: 50px;
+text-align: center;
+margin: 0 auto;
+background-color: #7de5ff;
+font-size: 20px;
+margin-block: 10px;
+font-weight: 600;
+
+        }
+        .start-btn:hover{
+            background-color: #05c4f4;
+          cursor: pointer;
+        }
+        .round{
+            height: 200px;
+            width: 200px;
+            border-radius:100px ;
+            background:linear-gradient(to top right, #bcbcbc33 ,#ffffff) ;
+        }
+        .c1{
+            position: absolute;
+            bottom:20px ; 
+            left: 40px;
+            z-index : -2 !important;
+        }
+        .c2{
+            position: absolute;
+            top:80px ; 
+            z-index : -2 !important;
+            right: 40px
+        }
