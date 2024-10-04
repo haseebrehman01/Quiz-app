@@ -1,86 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css" />
     <!-- <link rel="stylesheet" href="quiz.css"> -->
     <script src="
 https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js
 "></script>
-<link href="
+    <link
+      href="
 https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.min.css
-" rel="stylesheet">
-</head>
+"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body>
+    <!-- <div></div> -->
 
-    <body>
-        <!-- <div></div> --> 
-      
-        <div class="main-div">   
-   
-        <div class="header">
-            <div class="min-width">
-                <div class="quiz-logo"><h1>Quiz <span class="span">App</span></h1></div>
-            <a href="index.html" class="header-link">Logout</a>
-            </div>
+    <div class="main-div">
+      <div class="header">
+        <div class="min-width">
+          <div class="quiz-logo">
+            <h1>Quiz <span class="span">App</span></h1>
+          </div>
+          <a href="index.html" class="header-link">Logout</a>
         </div>
-       
-         
-                <!-- <div class=""></div>  -->
-                <div class="main-2 ">
-                    <div class="inner-div">
-                
-                        <div class="quiz"><h1>Quiz <span class="span">App</span></h1></div>
-                       <div class="time-result ">
-                        
-                       <div id="topresult"></div>
-                       <div id="time-div"></div>
-              
-                      </div>
-                            <span class="line"></span>  
-       
-                <div class="q-o">
-              <h2 id="questions"></h2>
-       
-        <ul>
-                   <li>
-                       <input type="radio" name="roptions"  onclick="enableBtn()" value="1" id="op1" class="answer">  
-                       <label for="op1" id="option1"></label>
-                   </li>
-               </ul>
-               <ul>
-                   <li>
-                       <input type="radio" name="roptions"  onclick="enableBtn()" value="2" id="op2" class="answer">  
-                       <label for="op2" id="option2"></label>
-                   </li>
-               </ul>
-               <ul>
-                   <li>
-                       <input type="radio" name="roptions"  onclick="enableBtn()" value="3" id="op3" class="answer">  
-                       <label for="op3" id="option3"></label>
-                   </li>
-               </ul>
-               <ul>
-                   <li>
-                       <input type="radio" name="roptions"  onclick="enableBtn()" value="4" id="op4" class="answer">  
-                       <label for="op4" id="option4"></label>
-                   </li>
-               </ul>
-       </div> 
-        <div class="button">
-           <button onclick="nextQue()"  id="btn" disabled >Next</button>
-       </div>
-       </div>
-                </div>
-          
-</div>
-<div class="round c1"></div>
-<div class="round c2"></div>
-           
-        <script src="app.js"></script>
-        <script src="https://kit.fontawesome.com/d368ad9ef6.js" crossorigin="anonymous"></script>
+      </div>
 
-    </body>
+      <!-- <div class=""></div>  -->
+      <div class="main-2">
+        <div class="inner-div">
+          <div class="quiz">
+            <h1>Quiz <span class="span">App</span></h1>
+          </div>
+          <div class="time-result">
+            <div id="topresult"></div>
+            <div id="time-div"></div>
+          </div>
+          <span class="line"></span>
 
+          <div class="q-o">
+            <h2 id="questions"></h2>
+
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="roptions"
+                  onclick="enableBtn()"
+                  value="1"
+                  id="op1"
+                  class="answer"
+                />
+                <label for="op1" id="option1"></label>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="roptions"
+                  onclick="enableBtn()"
+                  value="2"
+                  id="op2"
+                  class="answer"
+                />
+                <label for="op2" id="option2"></label>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="roptions"
+                  onclick="enableBtn()"
+                  value="3"
+                  id="op3"
+                  class="answer"
+                />
+                <label for="op3" id="option3"></label>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="roptions"
+                  onclick="enableBtn()"
+                  value="4"
+                  id="op4"
+                  class="answer"
+                />
+                <label for="op4" id="option4"></label>
+              </li>
+            </ul>
+          </div>
+          <div class="button">
+            <button onclick="nextQue()" id="btn" disabled>Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="round c1"></div>
+    <div class="round c2"></div>
+
+    <script src="app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d368ad9ef6.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

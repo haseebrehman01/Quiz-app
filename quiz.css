@@ -1,117 +1,160 @@
-
 /* font-awesome */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
-/* All elements styyling */
-*{
-margin: 0px;
-padding: 0px;
-box-sizing: border-box;
+
+/* All elements styling */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
+
 /* body styling */
-body{
-    font-family: 'Josefin Sans',sans-serif;
+body {
+    font-family: 'Josefin Sans', sans-serif;
 }
-/* Parent styling  */
-.outer-box{
+
+/* Parent styling */
+.outer-box {
     width: 100vw;
     height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-    background: linear-gradient(to top left, #3ed8ff,#a8ffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top left, #3ed8ff, #a8ffff);
 }
-/* child syling (positioning 2nd div) */
-.inner-box{
-  
+
+/* child styling (positioning 2nd div) */
+.inner-box {
     margin: 0 auto;
-    width: 450px;
-
-padding: 20px 40px;
-background-color: white;
-border-radius: 9px;
-box-shadow: 2px 2px 5px #005669;
-z-index: 2;
-
+    width: 90%; /* Changed from fixed width to percentage */
+    max-width: 450px; /* Set a max-width for larger screens */
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 9px;
+    box-shadow: 2px 2px 5px #005669;
+    z-index: 2;
 }
+
 /* signup header */
-.signup-header h1{
+.signup-header h1 {
     font-size: 2.5rem;
     color: #212121;
     text-align: center;
 }
-span{
-    color:#00ccff;
+
+span {
+    color: #00ccff;
 }
-.signup-header p{
+
+.signup-header p {
     font-size: 0.9rem;
     color: #555;
-    margin-top:10px ;
+    margin-top: 10px;
     text-align: center;
- }/* signup header complete*/
-/* main signup body (input) */
-.signup-body{
-    margin: 20px 0;
-
 }
-.signup-body p{
+
+/* main signup body (input) */
+.signup-body {
+    margin: 20px 0;
+}
+
+.signup-body p {
     margin: 15px 0px;
 }
-.signup-body label{
-    display: block;/* beacuse input inline hota, idhar esi lya nahi dekhraha qka jaga ka    m hai */
-    font-weight: bold;
 
+.signup-body label {
+    display: block; /* Ensures label takes full width */
+    font-weight: bold;
 }
 
-.signup-body p input{
+.signup-body p input {
     width: 100%;
     padding: 10px;
-    border: 2px solid  #d4f6ff;
+    border: 2px solid #d4f6ff;
     border-radius: 6px;
     margin-top: 5px;
     margin-left: -3px;
     font-size: 0.9rem;
-    color: black ;
+    color: black;
     font-weight: lighter;
-   
 }
 
-
-.signup-body  input[type="submit"]{
+.signup-body input[type="button"] {
     padding: 11px;
     background-color: #7de5ff;
-
-font-weight: bold;
-    color: black ;
+    font-weight: bold;
+    color: black;
     border-radius: 20px;
+    width: 100%; /* Ensure the button takes full width */
 }
-.signup-body :hover[type="submit"]{
+
+.signup-body input[type="button"]:hover {
     background-color: #05c4f4;
-  cursor: pointer;
+    cursor: pointer;
 }
 
-.signup-footer{
+.signup-footer {
     text-align: center;
-font-size: 14px;}
+    font-size: 14px;
+}
 
-.round{
+.round {
     height: 200px;
     width: 200px;
-    border-radius:100px ;
-    background:linear-gradient(to top right, #bcbcbc33 ,#ffffff) ;
+    border-radius: 100px;
+    background: linear-gradient(to top right, #bcbcbc33, #ffffff);
 }
-.c1{
-    position: absolute;
-    top:40px ; 
-    /* z-index : -2 !important; */
-    left: 40px
 
-}
-.c2{
+.c1 {
     position: absolute;
-    bottom:40px ;
-    /* z-index : -2 !important;  */
-    right: 40px
+    top: 40px;
+    left: 40px;
 }
-.center{
+
+.c2 {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.center {
     text-align: center;
+    color: red;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .inner-box {
+        padding: 20px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .signup-header h1 {
+        font-size: 2rem; /* Reduce header size */
+    }
+
+    .signup-body p input {
+        font-size: 0.8rem; /* Reduce input font size */
+    }
+    
+    .signup-body input[type="button"] {
+        font-size: 0.9rem; /* Reduce button font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-header h1 {
+        font-size: 1.8rem; /* Further reduce header size */
+    }
+
+    .signup-body p input {
+        padding: 8px; /* Reduce input padding */
+    }
+
+    .signup-body input[type="button"] {
+        padding: 10px; /* Reduce button padding */
+    }
+
+    .outer-box {
+        flex-direction: column; /* Stack elements vertically */
+    }
 }

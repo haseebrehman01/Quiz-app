@@ -12,6 +12,7 @@ body{
     /* background: linear-gradient(to top left, #3ed8ff,#a8ffff) !important; */
     /* border: 1px solid red; */
     background: linear-gradient(to top left, #3ed8ff,#a8ffff);
+    min-height: 100vh;
 }
 .main{
     /* background: linear-gradient(to top left, #3ed8ff,#a8ffff) !important; */
@@ -121,3 +122,72 @@ font-weight: 600;
             z-index : -2 !important;
             right: 40px
         }
+
+
+        @media screen and (max-width: 991px) {
+            .min-width {
+                width: 90%;
+            }
+            .html-quiz {
+                max-width: 600px;
+                height: auto;
+                padding: 20px;
+            }
+            .start-btn {
+                width: 90%;
+            }
+            .para {
+                padding-inline: 40px;
+            }
+        }
+        
+        @media screen and (max-width: 767px) {
+            .html-quiz {
+                max-width: 500px;
+                margin-block: 50px;
+            }
+            .html-h2 {
+                font-size: 32px;
+            }
+            .para {
+                padding-inline: 20px;
+                font-size: 18px;
+            }
+            .start-btn {
+                width: 80%;
+                font-size: 18px;
+                padding: 8px;
+            }
+        }
+        
+        @media screen and (max-width: 479px) {
+            .html-quiz {
+                max-width: 90%;
+                margin-block: 30px;
+            }
+            .html-h2 {
+                font-size: 28px;
+            }
+            .para {
+                font-size: 16px;
+                padding-inline: 15px;
+            }
+            .start-btn {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+            }
+            .round {
+                height: 100px;
+                width: 100px;
+            }
+            .c1 {
+                bottom: 10px;
+                left: 20px;
+            }
+            .c2 {
+                top: 40px;
+                right: 20px;
+            }
+        }
+        

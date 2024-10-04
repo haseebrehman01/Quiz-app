@@ -1,4 +1,5 @@
 // Quiz data (array of objects) 
+
 var quizQue = [
   {
     question : "Q1 : What is HTML?",
@@ -188,8 +189,10 @@ roptions[i].checked = false  //radio off work (auto)
         var resultt =  (number / quizQue.length) *100 + "%"  
 
  if (number > 5){  
-  inner_div.style.marginTop = "110px";
-  inner_div.innerHTML =`<div class="last-work"><div class="s">
+
+  inner_div.innerHTML =`
+<div class="last-work">
+<div class="s">
 <h1 class="last-h2"><span class="pass">Congratulations you are passed <i class="fa-solid fa-face-grin-hearts" style="color: #ffdd00;"></i></h1>
 <h2 class="last-h3">you got <span class="pass">${number}</span> / ${b}</h2>
 <h3 class="last-h4">Your percentage is <span class="pass">${resultt}</span></h3></div>
@@ -200,18 +203,20 @@ roptions[i].checked = false  //radio off work (auto)
 </div></div>`
  }
  else{
-  inner_div.style.marginTop = "110px";
   inner_div.innerHTML =`
-  <div class="last-work"><div class="s">
+  <div class="last-work">
+  <div class="s">
 <h1 class="last-h2"> <span class="failed">Sorry! you are failed</span> <i class="fa-regular fa-face-frown-open" style="color: #ffdd00;"></i>
   </h1>
 <h2 class="last-h3">you got <span class="failed">${number}</span> / ${b}</h2>
-<h3 class="last-h4">Your percentage is <span class="failed">${resultt}</span></h3></div>
+<h3 class="last-h4">Your percentage is <span class="failed">${resultt}</span></h3>
+</div>
 <div class="last-btns"> 
     <a href="home.html"><button class="last-btn">Home</button></a>
     <a href=""><button class="last-btn a">Play Again</button></a>
     <a href="index.html"><button class="last-btn">Logout</button></a>
-</div></div>`
+</div>
+</div>`
  }
 
     }
